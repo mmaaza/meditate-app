@@ -12,6 +12,12 @@ fun AppNavigation() {
         composable("welcome") {
             WelcomeScreen(navController = navController)
         }
+        composable("login") {
+            LoginScreen(navController = navController)
+        }
+        composable("register") {
+            RegisterScreen(navController = navController)
+        }
         composable("home") {
             HomeScreen()
         }
