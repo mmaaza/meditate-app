@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_screen">
+
+    <!-- Tab Bar -->
+    <LinearLayout
+        android:id="@+id/tabBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingVertical="16dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/tabMusic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvTabMusic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MUSIC"
+                android:textSize="14sp"
+                android:textColor="#9AA5A0" />
+
+            <View
+                android:id="@+id/indicatorMusic"
+                android:layout_width="36dp"
+                android:layout_height="2dp"
+                android:background="@drawable/bg_tab_indicator"
+                android:layout_marginTop="6dp"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tabTimer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvTabTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TIMER"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#57C983" />
+
+            <View
+                android:id="@+id/indicatorTimer"
+                android:layout_width="36dp"
+                android:layout_height="2dp"
+                android:background="@drawable/bg_tab_indicator"
+                android:layout_marginTop="6dp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tabThemes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvTabThemes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="THEMES"
+                android:textSize="14sp"
+                android:textColor="#9AA5A0" />
+
+            <View
+                android:id="@+id/indicatorThemes"
+                android:layout_width="36dp"
+                android:layout_height="2dp"
+                android:background="@drawable/bg_tab_indicator"
+                android:layout_marginTop="6dp"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Content Area -->
+    <FrameLayout
+        android:id="@+id/contentContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="20dp"
+        app:layout_constraintTop_toBottomOf="@id/tabBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Timer Tab Content -->
+        <include
+            android:id="@+id/timerContent"
+            layout="@layout/content_timer"
+            android:visibility="visible" />
+
+        <!-- Music Tab Content -->
+        <include
+            android:id="@+id/musicContent"
+            layout="@layout/content_music"
+            android:visibility="gone" />
+
+        <!-- Themes Tab Content -->
+        <include
+            android:id="@+id/themesContent"
+            layout="@layout/content_themes"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

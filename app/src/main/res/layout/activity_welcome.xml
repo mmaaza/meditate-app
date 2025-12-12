@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bg_gradient_screen">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meditate"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:textColor="#1C1F1D"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="48dp" />
+
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find peace in the present moment"
+            android:textSize="16sp"
+            android:textColor="#6F7975"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <ImageView
+            android:id="@+id/ivWelcome"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:src="@drawable/welcome_img"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintTop_toBottomOf="@id/tvSubtitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="32dp" />
+
+        <TextView
+            android:id="@+id/tvWelcomeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Your Journey"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#1C1F1D"
+            app:layout_constraintTop_toBottomOf="@id/ivWelcome"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="32dp" />
+
+        <TextView
+            android:id="@+id/tvWelcomeDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Discover inner peace through guided meditation, mindful, breathing, and gentle awareness practices."
+            android:textSize="14sp"
+            android:textColor="#6F7975"
+            android:textAlignment="center"
+            android:lineSpacingExtra="4dp"
+            app:layout_constraintTop_toBottomOf="@id/tvWelcomeTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginHorizontal="16dp" />
+
+        <Button
+            android:id="@+id/btnBegin"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:text="Begin Your Exercise"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bg_gradient_green_button"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@id/tvWelcomeDesc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+

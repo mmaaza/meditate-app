@@ -1,3 +1,73 @@
 <resources>
     <string name="app_name">Medita</string>
+    
+    <!-- Welcome Screen -->
+    <string name="welcome_title">Meditate</string>
+    <string name="welcome_subtitle">Find peace in the present moment</string>
+    <string name="welcome_journey_title">Welcome to Your Journey</string>
+    <string name="welcome_journey_desc">Discover inner peace through guided meditation, mindful, breathing, and gentle awareness practices.</string>
+    <string name="btn_begin">Begin Your Exercise</string>
+    
+    <!-- Login Screen -->
+    <string name="login_title">Meditate</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">Login</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="no_account">Don\'t have an account? </string>
+    <string name="sign_up">Sign up</string>
+    
+    <!-- Register Screen -->
+    <string name="register_title">Create Account</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="btn_sign_up">Sign Up</string>
+    <string name="have_account">Already have an account? </string>
+    <string name="sign_in">Sign in</string>
+    
+    <!-- Home Screen - Tabs -->
+    <string name="tab_music">MUSIC</string>
+    <string name="tab_timer">TIMER</string>
+    <string name="tab_themes">THEMES</string>
+    
+    <!-- Timer -->
+    <string name="btn_start">Start</string>
+    <string name="btn_pause">Pause</string>
+    <string name="btn_resume">Resume</string>
+    <string name="btn_reset">Reset</string>
+    <string name="status_ready">Ready</string>
+    <string name="status_counting">Counting down</string>
+    <string name="status_paused">Paused</string>
+    <string name="status_complete">Complete</string>
+    <string name="duration_presets">Duration presets</string>
+    <string name="chip_1_min">1 min</string>
+    <string name="chip_3_min">3 min</string>
+    <string name="chip_5_min">5 min</string>
+    <string name="chip_10_min">10 min</string>
+    <string name="chip_15_min">15 min</string>
+    <string name="chip_custom">Custom</string>
+    
+    <!-- Themes -->
+    <string name="choose_theme">Choose Your Theme</string>
+    <string name="theme_ocean">Ocean</string>
+    <string name="theme_ocean_desc">Calm swells</string>
+    <string name="theme_forest">Forest</string>
+    <string name="theme_forest_desc">Gentle breeze</string>
+    <string name="theme_starry">Starry Sky</string>
+    <string name="theme_starry_desc">Midnight hush</string>
+    <string name="theme_about">ABOUT</string>
+    <string name="theme_selection_title">Theme Selection</string>
+    <string name="theme_selection_desc">Select a theme to personalize your meditation experience. Each theme provides a unique visual ambiance to enhance your practice.</string>
+    
+    <!-- Music -->
+    <string name="soundscapes">Soundscapes</string>
+    <string name="soundscapes_desc">Curated breathing playlists are coming soon. Save your favorite ocean, forest, or starry sky ambience here.</string>
+    <string name="coming_soon">Coming Soon</string>
+    
+    <!-- Dialog -->
+    <string name="custom_duration">Custom Duration</string>
+    <string name="minutes">Minutes</string>
+    <string name="seconds">Seconds</string>
+    <string name="btn_set">Set</string>
+    <string name="btn_cancel">Cancel</string>
 </resources>

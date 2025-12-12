@@ -7,4 +7,21 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- App Colors -->
+    <color name="primary_green">#57C983</color>
+    <color name="primary_green_light">#9BF3B2</color>
+    <color name="background_start">#F7FFFB</color>
+    <color name="background_end">#189BF3B2</color>
+    <color name="text_primary">#1C1F1D</color>
+    <color name="text_secondary">#6F7975</color>
+    <color name="tab_inactive">#9AA5A0</color>
+    <color name="card_background">#E6FFFFFF</color>
+    <color name="chip_inactive_bg">#F0F9F2</color>
+    <color name="input_border">#E0E0E0</color>
+
+    <!-- Theme colors -->
+    <color name="ocean_accent">#00838F</color>
+    <color name="forest_accent">#2E7D32</color>
+    <color name="starry_accent">#512DA8</color>
 </resources>
